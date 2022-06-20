@@ -1,0 +1,54 @@
+/* ---------- Schriften ----------*/
+@import 'https://fonts.googleapis.com/css2?family=Koulen&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap'
+$roboto: 'Roboto', sans-serif
+
+/* ---------- Farben ----------*/
+$ciRed: #ff073a
+$ciBlack: #111
+$ciWhite: #eee
+
+/* ---------- Mixins -------- */
+@mixin flexCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+/* ---------- Standard Werte ---------- */
+$abstand: 1rem
+$halberabstand: calc($abstand / 2)
+$borderRadius: 1rem
+$border: 0.1rem solid $ciWhite
+$padding: 1rem 2rem
+$background: transparent
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+html
+    height: 100%
+
+body
+    width: 100%
+    height: 100vh
+    @include flexCenter
+    background-image: url('./../../assets/images/background-main.jpg')
+    background-size: cover
+    background-attachment: fixed
+    font-family: $roboto
+    font-weight: 600
+
+li
+    list-style: none
+
+a
+    text-decoration: none
+
+p
+    color: $ciWhite
+    font-size: 1.2rem
+
+i
+    margin: 0 $abstand 0 0
+    color: $ciRed

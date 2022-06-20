@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!---------- MetaTags ---------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------- Css Links ---------->
+    <link rel="stylesheet" href="styles/css/style.min.css">
+    <!---------- Fonts ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!---------- Titel ---------->
+    <title>Struckys Kontaktformular</title>
+</head>
+
+<body>
+    <!-- Kontaktformular START -->
+
+    <div class="contact">
+        <div class="contactHeader">
+            <h3>Hast du Fragen ? </h3>
+            <p>dann schreib mir doch einfach</p>
+        </div>
+        <form action="./php/send.php" method="post" target="_blank" id="contact-form">
+            <div class="contactName-wrapper">
+                <div class="input-wrapper">
+                    <label for="firstname"></label>
+                    <i class="fa fa-user"></i>
+                    <input type="text" required name="firstname" id="firstname" placeholder=" Dein Vorname * ">
+                </div>
+                <div class="input-wrapper">
+                    <label for="lastname"></label>
+                    <i class="fa fa-user"></i>
+                    <input type="text" required name="lastname" id="lastname" placeholder=" Dein Nachname *">
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <label for="email"></label>
+                <i class="fa fa-envelope"></i>
+                <input type="email" required name="email" id="email" placeholder=" Deine E-Mail *">
+            </div>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Nachricht ... *"></textarea>
+            <button id="form-submit" type="submit"><i class="fa fa-paper-plane"></i>Senden . . .</button>
+        </form>
+    </div>
+
+    <!-- Kontaktformular ENDE -->
+</body>
+
+</html>

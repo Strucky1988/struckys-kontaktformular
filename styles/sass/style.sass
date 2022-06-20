@@ -1,0 +1,101 @@
+// --- Imports ---//
+@import 'presets'
+
+// --- Kontaktformular START --- //
+.contact
+    position: relative
+    width: 55rem
+    height: 60rem
+    @include flexCenter
+    flex-direction: column
+    background-color: rgba($ciBlack, 0.7)
+    border: $border
+    border-radius: $borderRadius
+
+    .contactHeader
+        width: 100%
+        height: 20rem
+        padding: $abstand
+        background-image: url('./../../assets/images/header-Kontaktformular.jpg')
+        background-size: cover
+        border-radius: $borderRadius $borderRadius 0 0
+
+        h3
+            font-size: 3rem
+            color: $ciRed
+
+        p
+            font-size: 1.5rem
+
+    form
+
+        width: 100%
+        height: 100%
+        padding: $abstand
+        @include flexCenter
+        flex-direction: column
+        outline: none
+
+        input
+            width: 100%
+            color: $ciWhite
+            background-color: $background
+            border: none
+            outline: none
+            &::placeholder
+                color: $ciWhite
+                background-color: $background
+
+        .contactName-wrapper
+            width: 100%
+            margin: 0 0 $abstand 0
+            display: flex
+
+            .input-wrapper:nth-child(1)
+                margin: 0 $halberabstand 0 0
+
+            .input-wrapper:nth-child(2)
+                margin: 0 0 0 $halberabstand
+
+        .input-wrapper
+            width: 100%
+            margin: 0 0 $abstand 0
+            padding: $padding
+            display: flex
+            align-items: center
+            border-radius: $borderRadius
+            border: $border
+
+        textarea
+            width: 100%
+            height: 100%
+            margin: 0 0 $abstand 0
+            padding: $padding
+            color: $ciWhite
+            background-color: $background
+            border: $border
+            border-radius: $borderRadius
+            outline: none
+            resize: none
+            font-size: 1.5rem
+
+            &::placeholder
+                width: 100%
+                font-size: 1.2rem
+                color: $ciWhite
+                border: none
+                outline: none
+
+        button
+            width: 20rem
+            padding: $padding
+            color: $ciWhite
+            background-color: $background
+            border: $border
+            border-radius: $borderRadius
+            cursor: pointer
+
+            &:hover
+                color: $ciWhite
+                background-color: rgba($ciWhite,0.1)
+// --- Kontaktformular ENDE --- //
